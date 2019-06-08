@@ -85,7 +85,7 @@ Any code demonstration in the following sections will assume that we have alread
 
 ### readQuery
 
-The `readQuery` method is very similar to the [`query` method on `ApolloClient`][] except that `readQuery` will _never_ make a request to your GraphQL server. The `query` method, on the other hand, may send a request to your server if the appropriate data is not in your cache whereas `readQuery` will throw an error if the data is not in your cache. `readQuery` will _always_ read from the cache. You can use `readQuery` by giving it a GraphQL query like so:
+The `readQuery` method is very similar to the [`query` method on `ApolloClient`](https://www.apollographql.com/docs/react/api/apollo-client/#ApolloClient.query) except that `readQuery` will _never_ make a request to your GraphQL server. The `query` method, on the other hand, may send a request to your server if the appropriate data is not in your cache whereas `readQuery` will throw an error if the data is not in your cache. `readQuery` will _always_ read from the cache. You can use `readQuery` by giving it a GraphQL query like so:
 
 ```ts
 @Component({ ... })
